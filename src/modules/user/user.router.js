@@ -8,7 +8,7 @@ const app = Router();
 
 
 //get all user 
-app.get('/get',async(req,res)=>{
+app.get('/',async(req,res)=>{
 
     const{token} = req.headers;
     const decoded = jwt.verify(token,'soso');
