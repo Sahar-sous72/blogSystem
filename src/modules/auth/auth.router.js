@@ -7,7 +7,7 @@ const app = Router();
 //register
 app.post('/',async(req,res)=>{
     const{name,email,password}=req.body;
-   res.json({name,email,password});
+   //res.json({name,email,password});
 
     var passwordHashed = bcrypt.hashSync(password, 8);
 
