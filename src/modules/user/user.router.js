@@ -13,7 +13,7 @@ app.get('/',async(req,res)=>{
     const{token} = req.headers;
     const decoded = jwt.verify(token,'soso');
 
-    if(decoded.username != 'suha'){
+    if(decoded.username != 'Salma'){
         return res.status(400).json({message:" not autchenticated user"})
     }
         
